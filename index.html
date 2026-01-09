@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>빌드업 4.0 — McKinsey-Style IR Report (Stibee, White Text Full v2)</title>
+  <style>
+    /* Dark base (white text) — email safe */
+    body{margin:0;padding:0;background:#0b1220;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+    table{border-collapse:collapse;border-spacing:0}
+    img{border:0;display:block;line-height:0}
+    a{color:#22d3ee;text-decoration:none}
+    /* Type scale */
+    .h1{font-size:26px;line-height:1.35;font-weight:700;color:#ffffff}
+    .h2{font-size:18px;line-height:1.5;font-weight:700;color:#ffffff}
+    .h3{font-size:15px;line-height:1.6;font-weight:700;color:#ffffff}
+    .txt{font-size:14px;line-height:1.75;color:#f3f4f6}
+    .muted{color:#b6c2d3}
+    /* Components */
+    .container{max-width:760px;background:#0b1220;border-radius:10px;overflow:hidden}
+    .section{padding:18px 28px}
+    .hr{height:1px;background:#293243}
+    .tag{display:inline-block;font-size:11px;color:#22d3ee;border:1px solid #22d3ee;padding:4px 8px;border-radius:999px}
+    .kpi{border:1px solid #293243;border-radius:10px;padding:12px;background:#111827}
+    .box{border:1px solid #293243;border-radius:10px;background:#1a2233}
+    .num{display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:999px;background:#22d3ee;color:#0b1220;font-size:12px;font-weight:700;margin-right:6px}
+    .grid2 td{vertical-align:top;width:50%}
+    .list{margin:0 0 0 18px;padding:0}
+    .list li{margin:4px 0}
+    /* Link chip */
+    .chip{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid #22d3ee;color:#22d3ee;font-size:13px}
+  </style>
+</head>
+<body>
+  <table role="presentation" width="100%" bgcolor="#0b1220">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+        <table role="presentation" width="760" class="container">
+          <!-- Cover -->
+          <tr>
+            <td style="padding:26px 28px 22px;">
+              <div class="tag">INVESTOR / PARTNER REPORT</div>
+              <div style="height:8px"></div>
+              <div class="h1" style="margin:0 0 8px">빌드업 4.0 — 체험 기반 자산화 플랫폼</div>
+              <div class="txt muted" style="margin:0">Experience → Asset → Lifetime Value</div>
+            </td>
+          </tr>
+
+          <!-- Executive Summary -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">1</span>Executive Summary</div>
+              <p class="txt" style="margin:8px 0 10px">
+                빌드업 4.0은 광고·체험단 비용을 <strong>장기 자산</strong>으로 전환하는 이커머스 생태계입니다.
+                핵심은 <strong>맞춤형 AI 매칭</strong>, <strong>매출 기반 검증</strong>, <strong>자동화된 확산/보상</strong>으로 구성된 파이프라인입니다.
+                브랜드는 광고비 대비 3~5배 ROI를 기대하고, 인플루언서는 체험이 <strong>평생 수익</strong>으로 누적됩니다.
+              </p>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="kpi">
+                    <div class="h3">핵심 가치 제안</div>
+                    <ul class="list txt">
+                      <li>광고비 → <strong>자산</strong> 전환 (데이터·재구매율 축적)</li>
+                      <li>체험 → 구매 → 재구매의 <strong>실매출 검증</strong></li>
+                      <li>이메일/링크 기반 <strong>자동 확산</strong>, 리워드 자동화</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Problem & Context -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">2</span>Problem & Context</div>
+              <table role="presentation" width="100%" class="grid2">
+                <tr>
+                  <td class="txt">
+                    <div class="h3">2.1 브랜드</div>
+                    <ul class="list">
+                      <li>퍼포먼스 광고 비용 증가, <span class="muted">성과 검증 한계</span></li>
+                      <li>체험단의 단발성 노출, 매출 연결 부족</li>
+                    </ul>
+                    <div class="h3">2.2 인플루언서</div>
+                    <ul class="list">
+                      <li>일회성 협찬 Fee 중심, <span class="muted">장기 수익 부재</span></li>
+                      <li>성과 기반 보상·등급 체계 미흡</li>
+                    </ul>
+                  </td>
+                  <td class="txt">
+                    <div class="h3">2.3 소비자</div>
+                    <ul class="list">
+                      <li>신뢰 어려움 — 실매출 및 재구매 데이터 미노출</li>
+                      <li>리뷰 품질 편차, 정보 비대칭</li>
+                    </ul>
+                    <div class="box" style="padding:12px 14px;margin-top:8px">
+                      <div class="h3" style="margin:0 0 6px">요구되는 변화</div>
+                      <ul class="list">
+                        <li><strong>검증 가능한 매출 중심</strong>의 체험 구조</li>
+                        <li><strong>데이터 자산</strong>으로 누적되는 광고 지출</li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Solution Architecture -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">3</span>Solution Architecture</div>
+              <ul class="list txt">
+                <li><strong>맞춤형 AI 매칭</strong>: 100% 인플루언서·회원 데이터 기반 시밀러리티 매칭</li>
+                <li><strong>매출 기반 검증</strong>: 체험→구매→재구매의 전주기 데이터 수집/대시보드화</li>
+                <li><strong>자동화 파이프라인</strong>: 체험 신청→몰 자동 생성→트래킹 URL→리워드/등급 자동화</li>
+                <li><strong>가치 전환</strong>: 광고비가 <em>자산</em>(리텐션·LTV·데이터)으로 누적</li>
+              </ul>
+              <div class="box" style="padding:12px 14px;margin-top:10px">
+                <div class="h3" style="margin:0 0 6px">운영 프로세스 (요약)</div>
+                <ol class="list txt" style="margin-left:18px">
+                  <li>공급사 온보딩 → 상품 데이터/재고 연동</li>
+                  <li>AI 매칭에 의한 체험단 셀렉션 및 초대</li>
+                  <li>트래킹 URL 배포, 개인 몰 자동 생성</li>
+                  <li>실매출/재구매 집계, 보상·등급 자동 반영</li>
+                </ol>
+              </div>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Market & Positioning -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">4</span>Market & Positioning</div>
+              <table role="presentation" width="100%" class="grid2">
+                <tr>
+                  <td class="txt">
+                    <div class="h3">4.1 시장 동향</div>
+                    <ul class="list">
+                      <li>인플루언서·체험단/퍼포먼스 광고 시장의 <strong>고성장</strong></li>
+                      <li>ROI·투명성·성과 검증에 대한 니즈 급증</li>
+                    </ul>
+                  </td>
+                  <td class="txt">
+                    <div class="h3">4.2 포지셔닝</div>
+                    <ul class="list">
+                      <li>리뷰/협찬 플랫폼 → <strong>매출 검증·자산화 플랫폼</strong>으로 차별화</li>
+                      <li>장기적 LTV·리텐션·데이터 자산 확보</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Unit Economics & Business Model -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">5</span>Unit Economics & Business Model</div>
+              <table role="presentation" width="100%" class="grid2">
+                <tr>
+                  <td class="txt">
+                    <div class="h3">5.1 수익원</div>
+                    <ul class="list">
+                      <li>거래 수수료 (체험→판매→재구매)</li>
+                      <li>데이터 자산·광고 대체 매출</li>
+                      <li>프리미엄 리포트 / API</li>
+                    </ul>
+                  </td>
+                  <td class="txt">
+                    <div class="h3">5.2 유닛 이코노믹스 (가이드)</div>
+                    <ul class="list">
+                      <li>캠페인 ROI: 기존 광고 대비 <strong>3~5배</strong> 기대</li>
+                      <li>LTV 상승: 재구매율·구매 빈도 향상</li>
+                      <li>CAC 절감: AI 매칭·자동화로 운영 효율화</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Roadmap & Milestones -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">6</span>Roadmap & Milestones</div>
+              <ol class="list txt" style="margin-left:18px">
+                <li><strong>Phase 1 (1~2개월)</strong>: 파일럿·버그 제로화·운영 표준화</li>
+                <li><strong>Phase 2 (3~6개월)</strong>: 공급사 30개·인플루언서 500명</li>
+                <li><strong>Phase 3 (7~12개월)</strong>: 1,000개 몰·생태계 50,000명</li>
+              </ol>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Risks & Mitigation -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">7</span>Risks & Mitigation</div>
+              <table role="presentation" width="100%" class="grid2">
+                <tr>
+                  <td class="txt">
+                    <div class="h3">7.1 주요 리스크</div>
+                    <ul class="list">
+                      <li>체험 품질 편차, 부정 행위</li>
+                      <li>초기 확산 속도 저하</li>
+                      <li>공급사 온보딩 병목</li>
+                    </ul>
+                  </td>
+                  <td class="txt">
+                    <div class="h3">7.2 대응 전략</div>
+                    <ul class="list">
+                      <li>맞춤형 검색·등급제·매출 검증으로 필터링</li>
+                      <li>이메일·커뮤니티·리퍼럴 <strong>자동 확산</strong> 메커니즘</li>
+                      <li>표준 온보딩 킷·API 연동 템플릿</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- KPI Dashboard -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">8</span>KPI Dashboard (Targets)</div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="kpi txt">
+                    <ul class="list">
+                      <li><strong>풀</strong>: 6M 10만 → 12M 100만</li>
+                      <li><strong>거래액</strong>: 6M 500억 → 12M 3,000억 (예시)</li>
+                      <li><strong>캠페인</strong>: 월 100건 → 12M 월 1,000건</li>
+                      <li><strong>품질</strong>: 캠페인 성공률 95%+, 이탈률 1%↓</li>
+                      <li><strong>운영</strong>: 발행~배송 10분 내, 재고관리 30분 내</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Investment / Partnership Ask (no button) -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">9</span>Investment / Partnership Ask</div>
+              <ul class="list txt">
+                <li>전략 파트너십: 카테고리별 핵심 공급사 30개, 인플루언서 네트워크</li>
+                <li>투자: 파일럿/확장 단계 맞춤형 라운드 협의</li>
+                <li>공동 사업: 데이터 자산·광고 대체 매출 공유</li>
+              </ul>
+            </td>
+          </tr>
+          <tr><td class="hr"></td></tr>
+
+          <!-- Live Example -->
+          <tr>
+            <td class="section">
+              <div class="h2"><span class="num">10</span>운영중 사례 (12,000개 몰 중)</div>
+              <p class="txt" style="margin:6px 0 10px">아래 링크는 운영중인 빌드업 몰 중 하나의 예시입니다.</p>
+              <a class="chip" href="https://market.buildeup.com" target="_blank" rel="noopener">https://market.buildeup.com</a>
+            </td>
+          </tr>
+
+          <!-- Appendix (light background preserved) -->
+          <tr>
+            <td class="section" bgcolor="#f8fafc" style="background:#f8fafc;color:#111827">
+              <div style="font-size:15px;font-weight:700;margin:0 0 6px">Appendix — 핵심 메시지</div>
+              <p style="margin:0;font-size:14px;line-height:1.7;color:#111827">
+                빌드업 4.0은 <strong>체험단 플랫폼</strong>이 아니라 <strong>체험 기반 생태계 플랫폼</strong>입니다. 광고비를 지출이 아닌 <strong>자산</strong>으로 전환하고, 데이터와 네트워크 효과로 스스로 성장합니다.
+              </p>
+              <div style="height:10px"></div>
+              <p style="margin:0;font-size:12px;color:#4b5563">© 2025 Buildeup • <a href="mailto:info@buildeup.com" style="color:#0b6bcb">info@buildeup.com</a></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
