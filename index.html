@@ -3,35 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>빌드업 4.0 — IP Commerce Infrastructure & Equity-for-Service IR (Stibee Dark v3.2)</title>
+  <title>빌드업 4.0 — IP Commerce Infrastructure & Equity-for-Service IR (Stibee Dark v3.3)</title>
   <style>
-    body{margin:0;padding:0;background:#0b1220;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+    /* ===== Base (dark, email-safe) ===== */
+    body{
+      margin:0;padding:0;background:#0b1220;
+      -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;
+      color:#f3f4f6;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif;
+    }
     table{border-collapse:collapse;border-spacing:0}
     img{border:0;display:block;line-height:0}
     a{color:#22d3ee;text-decoration:none}
-    .h1{font-size:26px;line-height:1.35;font-weight:700;color:#ffffff}
-    .h2{font-size:18px;line-height:1.5;font-weight:700;color:#ffffff}
-    .h3{font-size:15px;line-height:1.6;font-weight:700;color:#ffffff}
-    .txt{font-size:14px;line-height:1.75;color:#f3f4f6}
+
+    /* ===== Type ===== */
+    .h1{font-size:24px;line-height:1.35;font-weight:800;color:#ffffff}
+    .h2{font-size:17px;line-height:1.5;font-weight:800;color:#ffffff}
+    .h3{font-size:14px;line-height:1.6;font-weight:800;color:#ffffff}
+    .txt{font-size:13px;line-height:1.7;color:#f3f4f6}
     .muted{color:#b6c2d3}
-    .container{max-width:760px;background:#0b1220;border-radius:10px;overflow:hidden}
-    .section{padding:18px 28px}
+
+    /* ===== Layout / Components ===== */
+    .container{max-width:760px;background:#0b1220;border-radius:12px;overflow:hidden}
+    .section{padding:18px 26px}
     .hr{height:1px;background:#293243}
     .tag{display:inline-block;font-size:11px;color:#22d3ee;border:1px solid #22d3ee;padding:4px 8px;border-radius:999px}
-    .kpi{border:1px solid #293243;border-radius:10px;padding:12px;background:#111827}
-    .box{border:1px solid #293243;border-radius:10px;background:#1a2233}
-    .num{display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:999px;background:#22d3ee;color:#0b1220;font-size:12px;font-weight:700;margin-right:6px}
+    .kpi{border:1px solid #293243;border-radius:12px;padding:12px;background:#111827;color:#f3f4f6}
+    .box{border:1px solid #293243;border-radius:12px;background:#1a2233;color:#f3f4f6}
+    .num{display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:999px;background:#22d3ee;color:#0b1220;font-size:12px;font-weight:800;margin-right:6px}
     .grid2 td{vertical-align:top;width:50%}
     .list{margin:0 0 0 18px;padding:0}
     .list li{margin:4px 0}
     .chip{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid #22d3ee;color:#22d3ee;font-size:13px}
     .badge{display:inline-block;font-size:12px;padding:3px 8px;border-radius:8px;border:1px solid #293243;background:#0f172a;color:#e5e7eb;margin-right:6px}
+
+    /* ===== Chips (IP tags) ===== */
+    .pill{
+      display:inline-block;
+      font-size:11px;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid #293243;
+      background:#0f172a;
+      color:#e5e7eb;
+      margin-right:6px;
+      margin-bottom:6px;
+    }
+
+    /* ===== Tables (fix: always readable, smaller) ===== */
     .t{border-collapse:collapse;width:100%}
-    .t td{padding:8px;border-bottom:1px solid #293243;vertical-align:top}
-    .t .th{color:#b6c2d3;font-size:12px}
-    .t .strong{font-weight:700;color:#ffffff}
+    .t td,.t th{
+      padding:10px 10px;
+      border-bottom:1px solid #293243;
+      vertical-align:top;
+      color:#f3f4f6;
+      font-size:13px;
+      line-height:1.55;
+      font-weight:500;
+      letter-spacing:-0.1px;
+    }
+    .t th{
+      color:#e5e7eb;
+      font-size:12px;
+      font-weight:800;
+    }
+    .t .th{color:#e5e7eb;font-size:12px;font-weight:800}
+    .t .strong{font-weight:900;color:#ffffff;font-size:13px}
     .t .last td{border-bottom:0}
-    .pill{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid #293243;background:#0f172a;color:#e5e7eb;margin-right:6px;margin-bottom:6px}
+
+    /* ===== Appendix (light) ===== */
+    .appendix{
+      background:#f8fafc;
+      color:#111827;
+      padding:18px 26px;
+    }
+    .appendix p{margin:0;font-size:13px;line-height:1.7;color:#111827}
+    .appendix .foot{margin:10px 0 0;font-size:12px;color:#4b5563}
   </style>
 </head>
 <body>
@@ -42,7 +89,7 @@
 
           <!-- Cover -->
           <tr>
-            <td style="padding:26px 28px 22px;">
+            <td style="padding:26px 26px 20px;">
               <div class="tag">INVESTOR / PARTNER REPORT</div>
               <div style="height:8px"></div>
               <div class="h1" style="margin:0 0 8px">빌드업 4.0 — IP 커머스 인프라 & 공급사 인큐베이팅(AC) 엔진</div>
@@ -61,7 +108,7 @@
             <td class="section">
               <div class="h2"><span class="num">1</span>Executive Summary</div>
               <p class="txt" style="margin:8px 0 10px">
-                빌드업 4.0은 <strong>'콘텐츠/커뮤니티(IP)'를 거래 엔진으로 바꾸는 커머스 운영 OS</strong>입니다.
+                빌드업 4.0은 <strong>‘콘텐츠/커뮤니티(IP)’를 거래 엔진으로 바꾸는 커머스 운영 OS</strong>입니다.
                 단순 판매 대행이 아니라, <strong>IP 운영(포켓)</strong>과 <strong>공급사 인큐베이팅</strong>을 결합해
                 <strong>매출 수익 + 지분 수익</strong>을 동시에 회수합니다.
               </p>
@@ -72,8 +119,8 @@
                     <div class="h3">핵심 가치 제안 (VC 관점)</div>
                     <ul class="list txt">
                       <li><strong>Verified Sales</strong>: 체험·추천이 아닌 <strong>실매출/재구매 데이터</strong>로 검증되는 성장</li>
-                      <li><strong>Pocket Network</strong>: IP 운영자가 보유한 "포켓(회원)"이 연결되어 <strong>자산처럼 누적</strong></li>
-                      <li><strong>EFS(Equity-for-Service)</strong>: 공급사에 OS·마케팅·유통을 제공하고 <strong>지분을 선취</strong></li>
+                      <li><strong>Pocket Network</strong>: IP 운영자가 보유한 “포켓(회원)”이 연결되어 <strong>자산처럼 누적</strong></li>
+                      <li><strong>EFS(Equity-for-Service)</strong>: 공급사에 OS·마케팅·유통 제공 후 <strong>지분 선취</strong></li>
                       <li><strong>AC 기능 내장</strong>: 공급사는 상품 경쟁력에 집중, 판매/운영은 빌드업이 견인</li>
                     </ul>
                   </td>
@@ -103,28 +150,28 @@
                     <ul class="list">
                       <li>트래픽 의존 → 비용 상승(CAC) → 이익률 하락</li>
                       <li>링크 기반 판매 → <span class="muted">데이터/고객 자산이 축적되지 않음</span></li>
-                      <li>공급사 경쟁력 확보가 어려워 <span class="muted">상품 소싱의 비대칭</span> 발생</li>
+                      <li>공급사 경쟁력 확보의 어려움 → <span class="muted">상품 소싱 비대칭</span></li>
                     </ul>
 
                     <div class="h3">2.2 공급사 관점</div>
                     <ul class="list">
                       <li>유통/마케팅/정산/CS의 운영 부담</li>
-                      <li>확장하려면 결국 <span class="muted">법인화·자본 구조화</span>가 필요</li>
+                      <li>확장 시 <span class="muted">법인화·자본 구조화</span> 필요</li>
                     </ul>
                   </td>
                   <td class="txt">
-                    <div class="h3">2.3 해결이 필요한 방향</div>
+                    <div class="h3">2.3 해결 방향</div>
                     <div class="box" style="padding:12px 14px;margin-top:8px">
                       <ul class="list">
                         <li><strong>IP(커뮤니티) 단위</strong>로 거래를 생성하고, 포켓(회원)을 자산화</li>
                         <li><strong>실매출/재구매</strong> 기반으로 성과 검증</li>
-                        <li>공급사를 <strong>인큐베이팅</strong>하여 상품 경쟁력과 기업가치를 함께 상승</li>
+                        <li>공급사를 <strong>인큐베이팅</strong>해 상품 경쟁력·기업가치 동시 상승</li>
                         <li>성과는 <strong>매출 수익 + 지분 가치</strong>로 회수</li>
                       </ul>
                     </div>
 
                     <p class="txt muted" style="margin:10px 0 0">
-                      * 빌드업은 "플랫폼이 커지는 회사"가 아니라 "IP와 공급사가 자산을 쌓는 구조"를 제공합니다.
+                      * 빌드업은 “플랫폼이 커지는 회사”가 아니라 “IP와 공급사가 자산을 쌓는 구조”를 제공합니다.
                     </p>
                   </td>
                 </tr>
@@ -140,8 +187,8 @@
               <ul class="list txt">
                 <li><strong>IP 운영 구조</strong>: 크리에이터는 단순 셀러가 아니라 <strong>IP 운영자</strong>로 전환 (각자 포켓/몰 보유)</li>
                 <li><strong>Pocket Network</strong>: 포켓(상점/회원)이 연결되어 상품·콘텐츠·수익이 이동</li>
-                <li><strong>Cost Plus+ 가격체계</strong>: 공급원가 기반 + IP 기여/운영/플랫폼 기여를 반영한 포켓 프라이스</li>
-                <li><strong>Verified Sales Dashboard</strong>: 실매출/재구매/구매빈도/회원별 성과를 집계</li>
+                <li><strong>Cost Plus+ 가격체계</strong>: 공급원가 기반 + IP/운영/플랫폼 기여를 반영한 포켓 프라이스</li>
+                <li><strong>Verified Sales Dashboard</strong>: 실매출/재구매/구매빈도/회원별 성과 집계</li>
                 <li><strong>EFS(Equity-for-Service)</strong>: 운영·마케팅·유통 제공 대가로 <strong>지분 선취</strong></li>
               </ul>
 
@@ -151,14 +198,14 @@
                   <li>공급사 발굴 → 상품 경쟁력 검증 → 법인/운영 구조화</li>
                   <li>IP(포켓) 설계 → 가격/수익 배분 정책 설정</li>
                   <li>연결 확산 → 실매출/재구매 데이터로 검증</li>
-                  <li>성과 기반으로 IP·공급사 확장, 지분 가치 상승</li>
+                  <li>성과 기반 IP·공급사 확장, 지분 가치 상승</li>
                 </ol>
               </div>
             </td>
           </tr>
           <tr><td class="hr"></td></tr>
 
-          <!-- NEW: IP Expansion Plan -->
+          <!-- IP Expansion Plan -->
           <tr>
             <td class="section">
               <div class="h2"><span class="num">4</span>IP 확장 계획 (실행 기반)</div>
@@ -175,37 +222,37 @@
 
                 <table role="presentation" class="t">
                   <tr>
-                    <td class="th">IP</td>
-                    <td class="th">기반 커뮤니티 / 타깃</td>
-                    <td class="th">검증 데이터 (현재)</td>
-                    <td class="th">확장 액션</td>
+                    <th align="left">IP</th>
+                    <th align="left">기반 커뮤니티 / 타깃</th>
+                    <th align="left">검증 데이터 (현재)</th>
+                    <th align="left">확장 액션</th>
                   </tr>
 
                   <tr>
                     <td class="strong">카모 IP</td>
-                    <td>카페 사업자 <strong>2만명</strong> 네트워크</td>
+                    <td>카페 사업자 <span class="strong">2만명</span> 네트워크</td>
                     <td>IP당 포켓(회원) 성숙도 고도화 구간</td>
                     <td>카페 B2B 소싱 + 포켓 네트워크 확장</td>
                   </tr>
 
                   <tr>
                     <td class="strong">단지식탁 IP</td>
-                    <td>아파트 커뮤니티 <strong>2,000세대 × 100개 단지</strong> 공략</td>
-                    <td>생활/식품 카테고리의 반복 구매에 최적</td>
+                    <td>아파트 커뮤니티 <span class="strong">2,000세대 × 100개 단지</span> 공략</td>
+                    <td>생활/식품 카테고리 반복 구매에 최적</td>
                     <td>단지별 대표 운영자(홀더) 확보 → 클러스터 확장</td>
                   </tr>
 
                   <tr>
                     <td class="strong">목포직송 IP</td>
-                    <td>Band/카카오스토리 회원 <strong>17,000명</strong> 보유</td>
-                    <td><strong>누적 매출 17억</strong> (기존 채널) → <strong>빌드업 전환</strong></td>
-                    <td>포켓 기반 가격/수익 체계로 전환 후 재구매 데이터 축적</td>
+                    <td>Band/카카오스토리 회원 <span class="strong">17,000명</span> 보유</td>
+                    <td><span class="strong">누적 매출 17억</span>(기존 채널) → 빌드업 전환</td>
+                    <td>포켓 기반 가격/수익 체계 전환 후 재구매 데이터 축적</td>
                   </tr>
 
                   <tr class="last">
                     <td class="strong">AUBE IP</td>
-                    <td>카페 약 <strong>3,740곳</strong> 네트워크</td>
-                    <td><strong>매출 7억</strong> 성공 사례 + 관측지표: <strong>784명</strong> / 1인 평균 <strong>월 27만원</strong></td>
+                    <td>카페 약 <span class="strong">3,740곳</span> 네트워크</td>
+                    <td><span class="strong">매출 7억</span> 성공 사례 + 관측지표: <span class="strong">784명</span> / 1인 평균 <span class="strong">월 27만원</span></td>
                     <td>성공 운영 템플릿을 카모/단지식탁으로 복제</td>
                   </tr>
                 </table>
@@ -219,12 +266,12 @@
 
           <tr><td class="hr"></td></tr>
 
-          <!-- Case Study: Equity-for-Service -->
+          <!-- EFS Case Study -->
           <tr>
             <td class="section">
               <div class="h2"><span class="num">5</span>Case Study — Equity-for-Service (EFS)</div>
               <p class="txt" style="margin:6px 0 10px">
-                빌드업은 일부 공급사에 대해 <strong>'현금 대신 지분'</strong>을 받고 운영·마케팅·유통을 총괄하는
+                빌드업은 일부 공급사에 대해 <strong>‘현금 대신 지분’</strong>을 받고 운영·마케팅·유통을 총괄하는
                 <strong>Equity-Based Operating Partnership</strong>을 실행합니다.
               </p>
 
@@ -244,27 +291,25 @@
                     <ul class="list txt">
                       <li>공급사 성장 → <strong>기업가치 상승</strong></li>
                       <li>빌드업은 <strong>매출 수익</strong> + <strong>지분 가치</strong> 동시 확보</li>
-                      <li>향후 <strong>M&A / 자회사 편입</strong> 옵션까지 내장</li>
-                      <li>판매 데이터가 누적될수록 검증이 빨라져 <strong>확장 비용↓</strong></li>
+                      <li>향후 <strong>M&A / 자회사 편입</strong> 옵션 내장</li>
+                      <li>판매 데이터 누적 → 검증 속도↑ → <strong>확장 비용↓</strong></li>
                     </ul>
                   </td>
                 </tr>
               </table>
 
-              <!-- UPDATED: 3-column scenarios -->
               <div class="box" style="padding:12px 14px;margin-top:12px">
                 <div class="h3" style="margin:0 0 8px">EFS 포트폴리오 — 지분가치(보수/기준/공격) 시나리오</div>
                 <p class="txt muted" style="margin:0 0 10px">
-                  EFS는 “수수료형 매출”과 별개로, <strong>공급사 기업가치 상승</strong>을 통해 <strong>옵션 가치</strong>를 누적합니다.
-                  아래는 포트폴리오 성장을 기준으로 한 추정치입니다.
+                  EFS는 “수수료형 매출”과 별개로, 공급사 기업가치 상승을 통해 옵션 가치를 누적합니다.
                 </p>
 
                 <table role="presentation" class="t">
                   <tr>
-                    <td class="th">구분</td>
-                    <td class="th">보수</td>
-                    <td class="th">기준</td>
-                    <td class="th">공격</td>
+                    <th align="left">구분</th>
+                    <th align="left">보수</th>
+                    <th align="left">기준</th>
+                    <th align="left">공격</th>
                   </tr>
 
                   <tr>
@@ -319,32 +364,25 @@
                 </table>
 
                 <div style="height:10px"></div>
-
-                <!-- UPDATED: one-liner for IR committee -->
                 <div class="kpi" style="margin-top:10px">
                   <div class="h3" style="margin:0 0 6px">IR 심의용 한 줄(회수 논리)</div>
                   <p class="txt" style="margin:0">
-                    <strong>빌드업은 ‘거래 수수료’로 현금흐름을 만들고, EFS 포트폴리오를 ‘지분 가치’로 키워
-                    M&A/지분매각/IPO 트랙에서 다중 회수(dual return)를 실행하는 커머스 기반 AC입니다.</strong>
+                    <strong>빌드업은 ‘거래 수수료’로 현금흐름을 만들고, EFS 포트폴리오를 ‘지분 가치’로 키워 M&A/지분매각/IPO 트랙에서 다중 회수(dual return)를 실행하는 커머스 기반 AC입니다.</strong>
                   </p>
                 </div>
 
                 <div style="height:10px"></div>
                 <div class="h3" style="margin:0 0 6px">회수 시나리오 (예시)</div>
                 <ul class="list txt">
-                  <li><strong>M&A</strong>: 성장·검증된 공급사를 빌드업 자회사로 편입하여 밸류체인 내재화</li>
-                  <li><strong>지분 매각</strong>: 기업가치 상승 구간에서 전략적 투자자/재무적 투자자에게 일부 회수</li>
-                  <li><strong>IPO/프로젝트 파이낸싱</strong>: 카테고리 리더 공급사의 상장·금융 구조화 트랙 지원</li>
+                  <li><strong>M&A</strong>: 성장·검증된 공급사를 빌드업 자회사로 편입(밸류체인 내재화)</li>
+                  <li><strong>지분 매각</strong>: 기업가치 상승 구간에서 전략적/재무적 투자자에게 일부 회수</li>
+                  <li><strong>IPO/프로젝트 파이낸싱</strong>: 카테고리 리더 공급사의 상장·금융 구조화 트랙</li>
                 </ul>
 
                 <p class="txt muted" style="margin:10px 0 0">
                   * 추정치이며, 계약 구조·평가 방식·회수 시점에 따라 변동 가능합니다.
                 </p>
               </div>
-
-              <p class="txt muted" style="margin:10px 0 0">
-                * 위 수치는 '모델 설명을 위한 구조 요약'이며, 세부 계약 조건은 케이스별로 상이할 수 있습니다.
-              </p>
             </td>
           </tr>
           <tr><td class="hr"></td></tr>
@@ -359,8 +397,8 @@
                     <div class="h3">6.1 시장 동향</div>
                     <ul class="list">
                       <li>크리에이터의 진화: 광고자 → 셀러 → <strong>IP 운영자</strong></li>
-                      <li>플랫폼 종속에서 벗어나 "자산을 쌓는 구조"로 이동</li>
-                      <li>AI 자동화로 1인 1몰 운영의 비용이 급격히 하락</li>
+                      <li>플랫폼 종속에서 벗어나 “자산을 쌓는 구조”로 이동</li>
+                      <li>AI 자동화로 1인 1몰 운영 비용이 급격히 하락</li>
                     </ul>
                   </td>
                   <td class="txt">
@@ -413,8 +451,8 @@
               <div class="h2"><span class="num">8</span>Roadmap & Milestones</div>
               <ol class="list txt" style="margin-left:18px">
                 <li><strong>Phase 1 (0~3개월)</strong>: 핵심 IP 운영자 확보, 표준 온보딩/가격정책 템플릿화</li>
-                <li><strong>Phase 2 (4~12개월)</strong>: IP 클러스터 확장(푸드·뷰티 등), 공급사 인큐베이팅 파이프라인 구축</li>
-                <li><strong>Phase 3 (13~24개월)</strong>: IP 200개 목표 트랙 진입, 해외(일본/몽골/필리핀 등) PoC</li>
+                <li><strong>Phase 2 (4~12개월)</strong>: IP 클러스터 확장, 공급사 인큐베이팅 파이프라인 구축</li>
+                <li><strong>Phase 3 (13~24개월)</strong>: IP 200개 목표 트랙, 해외(일본/몽골/필리핀 등) PoC</li>
               </ol>
             </td>
           </tr>
@@ -469,7 +507,7 @@
               <div class="box" style="padding:12px 14px;margin-top:10px">
                 <div class="h3" style="margin:0 0 6px">해외 확장 (2027~)</div>
                 <ul class="list txt">
-                  <li>빌드업 제펜 / 몽골 / 필리핀 등: 각국 인구의 상위 5%가 누리는 <strong>커머스 기반 소셜 클럽</strong> 모델</li>
+                  <li>빌드업 제펜 / 몽골 / 필리핀 등: 각국 인구 상위 5%가 누리는 <strong>커머스 기반 소셜 클럽</strong> 모델</li>
                   <li>시스템은 유지, 언어/카테고리/파트너만 로컬라이징</li>
                 </ul>
               </div>
@@ -496,25 +534,20 @@
               <div class="h2"><span class="num">12</span>운영중 예시</div>
               <p class="txt" style="margin:6px 0 10px">아래 링크는 운영중인 빌드업 몰 중 하나의 예시입니다.</p>
               <a class="chip" href="https://market.buildeup.com" target="_blank" rel="noopener">https://market.buildeup.com</a>
-              <div style="height:10px"></div>
-              <p class="txt muted" style="margin:0">
-                * VC 미팅 시 “회원별 매출/재구매/구매빈도 대시보드” 캡처를 함께 첨부하면 설득력이 극대화됩니다.
-              </p>
             </td>
           </tr>
 
           <!-- Appendix -->
           <tr>
-            <td class="section" bgcolor="#f8fafc" style="background:#f8fafc;color:#111827">
-              <div style="font-size:15px;font-weight:700;margin:0 0 6px">Appendix — 핵심 메시지</div>
-              <p style="margin:0;font-size:14px;line-height:1.7;color:#111827">
+            <td class="appendix">
+              <div style="font-size:14px;font-weight:800;margin:0 0 6px">Appendix — 핵심 메시지</div>
+              <p>
                 빌드업은 <strong>IP 운영자(포켓)</strong>와 <strong>공급사 인큐베이팅</strong>을 결합해
-                "매출 수익 + 지분 수익"을 동시에 회수하는 <strong>커머스 인프라</strong>입니다.
+                “매출 수익 + 지분 수익”을 동시에 회수하는 <strong>커머스 인프라</strong>입니다.
                 확장의 단위는 트래픽이 아니라 <strong>IP 수 × 포켓(회원) 수</strong>이며,
                 실매출/재구매 데이터로 성장의 재현성을 증명합니다.
               </p>
-              <div style="height:10px"></div>
-              <p style="margin:0;font-size:12px;color:#4b5563">© 2026 Buildeup • <a href="mailto:info@buildeup.com" style="color:#0b6bcb">info@buildeup.com</a></p>
+              <p class="foot">© 2026 Buildeup • <a href="mailto:info@buildeup.com" style="color:#0b6bcb">info@buildeup.com</a></p>
             </td>
           </tr>
 
